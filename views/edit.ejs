@@ -1,35 +1,35 @@
 <% layout("/layouts/boilerplate") -%>
 
-    <form action="/listing/<%=list.id%>?_method=put" method="post">
+    <form action="/listing/<%=list.id%>?_method=put" method="post" class="needs-validation" novalidate>
         <br>
         <div class="row">
             <div class="col-8 offset-2">
             <div class="mb-3">
             <label for="title" class="form-label">Update Title</label>
-            <input type="text" name="listing[title]" class="form-control" placeholder="Edit title" value="<%=list.title%>">
+            <input type="text" name="listing[title]" class="form-control" placeholder="Edit title" value="<%=list.title%>" required>
         </div >
         <div class="mb-3">
             <label for="description" class="form-label">Edit description :</label>
-            <textarea name="listing[description]" class="form-control" ><%=list.description%></textarea>
+            <textarea name="listing[description]" class="form-control" required><%=list.description%></textarea>
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Edit image url/link :</label>
-            <input type="text" name="listing[image]" class="form-control" placeholder="Edit image url/link" value="<%=list.image%>">
+            <input type="text" name="listing[image]" class="form-control" placeholder="Edit image url/link" value="<%=list.image%>" required>
         </div>
         <div class="row">
             <div class="mb-3 col-md-8">
             <label for="price" class="form-label">Edit price :</label>
-            <input type="number" name="listing[price]" class="form-control" placeholder="Edit price" value="<%=list.price%>">
+            <input type="number" name="listing[price]" class="form-control" placeholder="Edit price" value="<%=list.price%>" required>
         </div>
         <div class="mb-3 col-md-4">
             <label for="country" class="form-label">Edit country :</label>
-            <input type="text" name="listing[country]" class="form-control" placeholder="Edit country" value="<%=list.country%>">
+            <input type="text" name="listing[country]" class="form-control" placeholder="Edit country" value="<%=list.country%>" required>
         </div>
         </div>
         
         <div class="mb-3">
             <label for="location" class="form-label">Edit location :</label>
-            <input type="text" name="listing[location]" class="form-control" placeholder="Edit location" value="<%=list.location%>">
+            <input type="text" name="listing[location]" class="form-control" placeholder="Edit location" value="<%=list.location%>" required>
         </div>
         
         <button class="btn btn-dark mb-3 edit-btn">Edit</button>

@@ -2,39 +2,42 @@
 <div class="row">
     <div class="col-8 offset-2">
         <br><br><h1>Create new listing</h1>
-    <form action="/listing" method="post" >
+    <form action="/listing" method="post" class="needs-validation" novalidate >
 
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
-            <input type="text" name="listing[title]"  class="form-control" placeholder="Enter a catchy title">
+            <input type="text" name="listing[title]"  class="form-control" placeholder="Enter a catchy title" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">Please enter Username!</div>
+            
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description :</label>
-            <textarea name="listing[description]" class="form-control" placeholder="Enter description"></textarea>
+            <textarea name="listing[description]" class="form-control" placeholder="Enter description"  required></textarea>
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Enter image URL/Link :</label>
-            <input type="text" name="listing[image]" class="form-control" placeholder="Enter image URL/Link">
+            <input type="text" name="listing[image]" class="form-control" placeholder="Enter image URL/Link"  >
         </div>
         <div class="row">
             <div class="mb-3 col-md-4" >
             <label for="price" class="form-label">Price</label>
-            <input type="number" name="listing[price]" class="form-control" placeholder="Enter price">
+            <input type="text" name="listing[price]" class="form-control" placeholder="Enter price" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">Enter valid price</div>
         </div>
         <div class="mb-3 col-md-8">
             <label for="country" class="form-label">Country</label>
-            <input type="text" name="listing[country]" class="form-control"  placeholder="Enter country">
+            <input type="text" name="listing[country]" class="form-control"  placeholder="Enter country" required>
         </div>
         </div>
         
         <div class="mb-3">
             <label for="location" class="form-label">Location</label>
-            <input type="text" name="listing[location]" class="form-control" placeholder="Enter location">
+            <input type="text" name="listing[location]" class="form-control" placeholder="Enter location" required>
         </div>
         <button class="btn btn-dark mb-3 add-btn">Add</button>
     </form>
     </div>
-    
 </div>
+
     
 

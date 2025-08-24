@@ -55,14 +55,14 @@ footer{
 }
 
 /* listing style */
-.card{
+.listing-card{
     border:none !important;
     margin-bottom: 2rem;;
 }
 
-.card-img-top{
+.listing-img{
+    width : 100%;
     border-radius: 1rem !important;
-    width: 100% !important;
     object-fit: cover !important;
 }
 
@@ -94,8 +94,16 @@ footer{
 }
 
 /* show  */
+.list-card{
+    border:none !important;
+    margin-bottom: 2rem;;
+}
+
+
 .list-img{
     height : 50vh;
+    border-radius: 1rem !important;
+    object-fit: cover;
 }
 
 .btns{
@@ -108,3 +116,12 @@ footer{
  border: none !important;
  
 }
+
+
+/*  review */
+
+.review-btn{
+    background-color: black !important;
+    color: white !important;
+}
+
