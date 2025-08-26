@@ -1,11 +1,10 @@
 <% layout("/layouts/boilerplate") -%>
 <div class="row">
     <div class="col-8 offset-2">
-        <h2 class="mb-3 mt-3">Listing details:</h2>
+        <h2 class="mb-3 mt-3"><%=list.title%></h2>
     <div class="card list-card" >
     <img src="<%=list.image%>" class="card-img-top list-img mb-3 detail-img" alt="..." >
     <div class="card-body">
-    <h5 class="card-title" style="text-decoration: underline;"><%=list.title%></h5>
     <p class="card-text"><%=list.description%> <br>
         <b>Price:</b>&#8377;<%=list.price.toLocaleString("en-IN")%> <br>
         <b>Location:</b> <%=list.location%> <br>
